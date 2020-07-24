@@ -1,0 +1,18 @@
+# REWRITE IT AGAIN !
+
+# npm i react react-dom react-router-dom core-js regenerator-runtime
+# npm i --save-dev postcss-loader @babel/core @babel/plugin-proposal-class-properties @babel/preset-env @babel/preset-react @babel/preset-stage-2 autoprefixer babel-loader css-loader file-loader html-webpack-plugin style-loader url-loader webpack webpack-cli webpack-dev-server
+
+# Set up support for older browsers (Ability to use Promises for example & more nextgen features in older browsers)
+    # npm i core-js regenerator-runtime
+    # add to babelrc file:
+     ["@babel/preset-env", {
+        "targets": {
+            "browsers": [
+                "> 1%",
+                "last 2 versions"
+            ]
+        },
+        "useBuiltIns": "usage",
+        "corejs": 3 // change to 2 if you're using core-js@2
+     }],
