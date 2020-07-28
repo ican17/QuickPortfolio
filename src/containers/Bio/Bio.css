@@ -1,0 +1,10 @@
+
+.Bio{
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 7% auto;
+    grid-column-gap: 0.5rem;
+    box-sizing: border-box;
+}
+
+
